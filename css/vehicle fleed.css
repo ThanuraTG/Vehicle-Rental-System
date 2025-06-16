@@ -1,0 +1,548 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: url(pic5.jpg) no-repeat;
+    display: block;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    background-size: 100%;
+}
+/* logo part */
+.im img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    vertical-align: top;
+    padding: 15px;
+    border-radius: 25px;
+}
+.img{
+    background: transparent;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+    
+}
+/* menu bar part */
+.menu-bar{
+    background: #4F6DA8;
+    text-align: right;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+.menu-bar ul{
+    list-style: none;
+    display: inline-flex;   
+}
+.menu-bar ul li{
+    padding: 10px 30px;
+    position: relative;
+}
+.menu-bar ul li a{
+    color: rgb(251, 251, 251);
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0;
+}
+.menu-bar ul li a:hover{
+    color: black;
+}
+/* munu bar 2 part*/
+.drop-down{
+    display: none;
+}
+.menu-bar ul li:hover .drop-down{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgb(12, 232, 228, 0.63);
+}
+.menu-bar ul li:hover .drop-down ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .drop-down ul li{
+    width: 150px;
+    padding: 10px;
+}
+.fas{
+    float: center;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+/*paragrahp*/
+body .para{
+    display: contents;
+    text-align: center;
+    color: rgb(34, 41, 41);
+    background: fixed;
+    font-size: 30px;
+    padding: 25px;
+    margin: 30px;
+    h2{
+        font-family: Colonna MT;
+    }
+}
+/*vehicle type*/
+body .typevehicle{
+    width: auto;
+    display: flexbox; 
+    margin: 20px;
+    background:black;
+    border: 3px solid rgb(255, 255, 225, .2);
+    color: rgb(255, 255, 255);
+    align-items: center;
+    padding: 30px;
+    border-radius: 15px;
+    border-color: #200de9;
+}
+/*luxury car form*/
+body .typevehicle .luxury{
+    width: 500px;
+    left: 50%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+    border: 3px solid rgb(255, 255, 225, .2);
+    color: rgb(224, 176, 19);
+    align-items: center;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 15px;
+    border-color: #d3bf07;
+    text-align: center;
+    h4{
+        font-size: 30px;
+    }
+    
+}
+/*premium car form*/
+body .typevehicle .premium{
+    width: 500px;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+    border: 3px solid rgb(255, 255, 225, .2);
+    color: rgb(224, 176, 19);
+    align-items: center;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 15px;
+    border-color: #d3bf07;
+    text-align: center;
+    h4{
+        font-size: 30px;
+    }
+}
+/*general car form*/
+body .typevehicle .general{
+    width: 500px;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+    border: 3px solid rgb(255, 255, 225, .2);
+    color: rgb(224, 176, 19);
+    align-items: center;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 15px;
+    border-color: #d3bf07;
+    text-align: center;
+    h4{
+        font-size: 30px;
+    }
+}
+/*4wd car form*/
+body .typevehicle .wd{
+    width: 500px;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+    border: 3px solid rgb(255, 255, 225, .2);
+    color: rgb(224, 176, 19);
+    align-items: center;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 15px;
+    border-color: #d3bf07;
+    text-align: center;
+    h4{
+        font-size: 30px;
+    }
+}
+/*van form*/
+body .typevehicle .van{
+    width: 500px;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+    border: 3px solid rgb(255, 255, 225, .2);
+    color: rgb(224, 176, 19);
+    align-items: center;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 15px;
+    border-color: #d3bf07;
+    text-align: center;
+    h4{
+        font-size: 30px;
+    }
+}
+/*classic car form*/
+body .typevehicle .classic{
+    width: 500px;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+    border: 3px solid rgb(255, 255, 225, .2);
+    color: rgb(224, 176, 19);
+    align-items: center;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 15px;
+    border-color: #d3bf07;
+    text-align: center;
+    h4{
+        font-size: 30px;
+    }
+}
+/*motorbikes form*/
+body .typevehicle .motorbikes{
+    width: 500px;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+    border: 3px solid rgb(255, 255, 225, .2);
+    color: rgb(224, 176, 19);
+    align-items: center;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 15px;
+    border-color: #d3bf07;
+    text-align: center;
+    h4{
+        font-size: 30px;
+    }
+}
+/*tuk form*/
+body .typevehicle .tuk{
+    width: 500px;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+    border: 3px solid rgb(255, 255, 225, .2);
+    color: rgb(224, 176, 19);
+    align-items: center;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 15px;
+    border-color: #d3bf07;
+    text-align: center;
+    h4{
+        font-size: 30px;
+    }
+}
+/*button*/
+.typevehicle .btn{
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    background: rgb(224, 193, 193);
+    border-radius: 30px;
+    font-size: 25px;
+    border: 1px solid black;
+    text-decoration: none;
+    list-style: none;
+    padding: 0px;
+    margin: 5px;
+}
+.typevehicle .btn a{
+    text-decoration: none;
+}
+
+/*local bar*/
+body .local-bar{
+    width: 100%;
+    height: 30px;
+    margin: 0px;
+    position: absolute;
+    left: 0;
+    top: auto;
+    background-color: #000000;
+    p{
+        width: 50%;
+        position: absolute;
+        left: 1.5%;
+        top: 12%;
+        color: white;
+    }
+    h5{
+        width: 50%;
+        position: absolute;
+        left:50%;
+        top: 15%;
+        font-size: 15px;
+        color: white;
+    }
+}
+
+
+  
+
+body .rectangle23 {
+    width: 30%;
+    height: 17%;
+    position: absolute;
+    left: 0%;
+    top: auto;
+    background-color: #8eafcc;
+    border-radius: 5px;
+}
+  
+body .rectangle24 {
+    width: 35%;
+    height: 17%;
+    position: absolute;
+    left: 30%;
+    top: auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+  
+body .rectangle25 {
+    width: 35%;
+    height: 17%;
+    position: absolute;
+    left: 65%;
+    top: auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+  
+body .autogroup9 {
+    width: 25%;
+    height: 0%;
+    position: absolute;
+    left: 70%;
+    top: auto;
+    display: flex;
+    align-items: flex-start;
+    background-color: #ffffff;
+    border-radius: 02px;
+
+}
+body .autogroup9 .thirdbox{
+    margin-right: 10px;
+    font-size: 80px;
+    color: #08289a;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+body .autogroup9 .pick-up-drop {
+    margin-top: 0.1rem;
+    max-width: 17rem;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.3025;
+    color: #000000;
+    font-family: Inika, 'Source Sans Pro';
+    flex-shrink: 0;
+}
+  
+body .firstbox {
+    width: 25%;
+    height: 0%;
+    position: absolute;
+    left: 2%;
+    top: auto;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 1.445;
+    color: #08289a;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+}
+body .years {
+    width: 25%;
+    height: 0%;
+    position: absolute;
+    left: 10%;
+    top: auto;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.3025;
+    color: #000000;
+    font-family: Inika, 'Source Sans Pro';
+    white-space: nowrap;
+}
+body .experienced {
+    width: 25%;
+    height: 0%;
+    position: absolute;
+    left: 10%;
+    top: auto;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.3025;
+    color: #000000;
+    font-family: Inika, 'Source Sans Pro';
+    white-space: nowrap;
+}
+body .rectangle24 .secondbox {
+    width: 25%;
+    height: 0%;
+    position: absolute;
+    left: 20%;
+    top: auto;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 1.445;
+    color: #08289a;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+}
+  
+body .rectangle24 .vehicles {
+    width: 25%;
+    height: 0%;
+    position: absolute;
+    left: 40%;
+    top: auto;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.445;
+    color: #000000;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+}
+  
+body .rectangle24 .total {
+    width: 25%;
+    height: 0%;
+    position: absolute;
+    left: 40%;
+    top: auto;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.445;
+    color: #000000;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+}
+  
+  
+
+
+/*end part*/
+.autogroup10 {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    height: 70%;
+    position: absolute;    
+    left: 0;
+    top: 831%;
+    background-color: #000000;
+}
+.autogroup10 .autogroup11{
+    .vehicle{
+        width: 25%;
+        top: 58%;
+        position: absolute;
+        left: 15%;
+        font-size: 60px;
+        font-family: SriLankan;
+        color: rgb(255, 255, 255);
+    }
+    .auto{
+        width: 15%;
+        top: 40%;
+        position: absolute;
+        left: 4%;
+        font-size: 70px;
+        font-family: SriLankan;
+        line-height: normal;
+        color: #ffffff;
+    }
+    .way{
+        width: 25%;
+        top: 40%;
+        position: absolute;
+        left: 16%;
+        font-size: 70px;
+        font-family: SriLankan;
+        line-height: normal;
+        color: #ff0000;
+    }
+}
+    
+
+.autogroup10 .autogroup12{
+    width: 100%;
+    left: 35%;
+    p{
+        width: 25%;
+        position: absolute;
+        left: 40%;
+        top: 20%;
+        font-size: 30px;
+        font-family: SriLankan;
+        color: rgb(255, 255, 255);
+    }
+    .information{
+        font-size: 50px
+    }
+    .vehicle-fleet{
+        top: 45%;
+    }
+    .services{
+        top: 55%;
+    }
+    .about-us{
+        top: 65%;
+    }
+    .contac-us{
+        top: 75%;
+    }
+}
+
+.autogroup10 .autogroup13{
+    width: auto;
+    position: absolute;
+    left: 70%;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 255, 255);
+    top: 10%;
+    .have-a-question{
+        font-size: 45px;
+        top: 15%;
+        font-family: SriLankan;
+    }
+    .rent{
+        top: 50%;
+    }
+    .num{
+        top: 50%;
+    }
+}
+
+  
+
+
+/*local bar*/
+body .local-bar2{
+    width: 100%;
+    height: 30px;
+    margin: 0px;
+    position: absolute;
+    left: 0;
+    top: 902%;
+    background-color: #000000;
+    p{
+        width: 50%;
+        position: absolute;
+        left: 1.5%;
+        top: 12%;
+        color: white;
+    }
+    h5{
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        font-size: 15px;
+        color: white;
+    }
+}
