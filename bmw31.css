@@ -1,0 +1,463 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(pic5.jpg) no-repeat;
+    display: block;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    
+    background-size: 100%;
+}
+/* logo part */
+.im img{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    vertical-align: top;
+    padding: 15px;
+    border-radius: 25px;
+}
+.img{
+    background: transparent;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    
+}
+/* menu bar part */
+.menu-bar{
+    background: #43079e;
+    text-align: right;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+.menu-bar ul{
+    list-style: none;
+    display: inline-flex;   
+}
+.menu-bar ul li{
+    padding: 10px 30px;
+    position: relative;
+}
+.menu-bar ul li a{
+    color: rgb(251, 251, 251);
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0;
+}
+.menu-bar ul li a:hover{
+    color: black;
+}
+/* munu bar 2 part*/
+.drop-down{
+    display: none;
+}
+.menu-bar ul li:hover .drop-down{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgb(116, 36, 221, 0.60);
+}
+.menu-bar ul li:hover .drop-down ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .drop-down ul li{
+    width: 150px;
+    padding: 10px;
+}
+.fas{
+    float: center;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+/*vehicle type*/
+body .typevehicle{
+    width: auto;
+    display: flexbox;
+    top: auto;
+    height: 80%;
+    text-align: center;
+    margin: 20px;
+    background:rgb(15, 13, 13);
+    border: 3px solid rgb(255, 255, 225, .2);
+    color: rgb(255, 255, 255);
+    align-items: center;
+    padding: 30px;
+    border-radius: 15px;
+    border-color: #200de9;
+
+
+
+}
+body .typevehicle .luxury img{
+    display: block;
+    align-items: center;
+    border: 5px solid wheat;
+    height: 400px;
+    width: 600px;
+}
+body .typevehicle .luxury h4{
+    width: 44%;
+    height: auto;
+    border: 3px solid red;
+    color: yellow;
+    padding: 5px;
+    left: 50%;
+    top: 110%;
+    position: absolute;
+    font-size: 30px;
+}
+body .typevehicle .details p{
+    border: 2px solid rgb(41, 133, 145);
+    background: white;
+    color: black;
+    top: 140%;
+    left: 50%;
+    position: absolute;
+    width: 45%;
+    height: 5%;
+    align-items: center;
+    font-size: 30px;
+}
+body .typevehicle .details .p1{
+    top: 141%;
+}
+body .typevehicle .details .p2{
+    top: 148%;
+    width: auto;
+}
+body .typevehicle .details .p3{
+    top: 155%;
+}
+body .typevehicle .details .p4{
+    top: 148%;
+    width: 10%;
+    left: 85%;
+}
+/*button*/
+.typevehicle .btn{
+    width: 25%;
+    height: 40px;
+    text-align: center;
+    background: rgb(224, 193, 193);
+    border-radius: 30px;
+    font-size: 30px;
+    border: 1px solid black;
+    text-decoration: none;
+    list-style: none;
+    padding: 0px;
+    margin: 5px;
+    position: absolute;
+    top: 120%;
+    left: 60%;
+    font-family: Bodoni MT;
+}
+.typevehicle .luxury .btn a{
+    text-decoration: none;
+}
+
+
+/*local bar*/
+body .local-bar{
+    width: 100%;
+    height: 30px;
+    margin: 0px;
+    position: absolute;
+    left: 0;
+    top: auto;
+    background-color: #000000;
+    p{
+        width: 50%;
+        position: absolute;
+        left: 1.5%;
+        top: 12%;
+        color: white;
+    }
+    h5{
+        width: 50%;
+        position: absolute;
+        left:50%;
+        top: 15%;
+        font-size: 15px;
+        color: white;
+    }
+}
+
+/*drop down*/
+body .rectangle23 {
+    width: 30%;
+    height: 17%;
+    position: absolute;
+    left: 0%;
+    top: auto;
+    background-color: #8eafcc;
+    border-radius: 5px;
+}
+  
+body .rectangle24 {
+    width: 35%;
+    height: 17%;
+    position: absolute;
+    left: 30%;
+    top: auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+  
+body .rectangle25 {
+    width: 35%;
+    height: 17%;
+    position: absolute;
+    left: 65%;
+    top: auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+  
+body .autogroup9 {
+    width: 25%;
+    height: 0%;
+    position: absolute;
+    left: 70%;
+    top: auto;
+    display: flex;
+    align-items: flex-start;
+    background-color: #ffffff;
+    border-radius: 02px;
+
+}
+body .autogroup9 .thirdbox{
+    margin-right: 10px;
+    font-size: 80px;
+    color: #08289a;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+body .autogroup9 .pick-up-drop {
+    margin-top: 0.1rem;
+    max-width: 17rem;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.3025;
+    color: #000000;
+    font-family: Inika, 'Source Sans Pro';
+    flex-shrink: 0;
+}
+  
+body .firstbox {
+    width: 25%;
+    height: 0%;
+    position: absolute;
+    left: 2%;
+    top: auto;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 1.445;
+    color: #08289a;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+}
+body .years {
+    width: 25%;
+    height: 0%;
+    position: absolute;
+    left: 10%;
+    top: auto;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.3025;
+    color: #000000;
+    font-family: Inika, 'Source Sans Pro';
+    white-space: nowrap;
+}
+body .experienced {
+    width: 25%;
+    height: 0%;
+    position: absolute;
+    left: 10%;
+    top: auto;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.3025;
+    color: #000000;
+    font-family: Inika, 'Source Sans Pro';
+    white-space: nowrap;
+}
+body .rectangle24 .secondbox {
+    width: 25%;
+    height: 0%;
+    position: absolute;
+    left: 20%;
+    top: auto;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 1.445;
+    color: #08289a;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+}
+  
+body .rectangle24 .vehicles {
+    width: 25%;
+    height: 0%;
+    position: absolute;
+    left: 40%;
+    top: auto;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.3025;
+    color: #000000;
+    font-family: Inika, 'Source Sans Pro';
+    white-space: nowrap;
+}
+  
+body .rectangle24 .total {
+    width: 25%;
+    height: 0%;
+    position: absolute;
+    left: 40%;
+    top: auto;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.3025;
+    color: #000000;
+    font-family: Inika, 'Source Sans Pro';
+    white-space: nowrap;
+}
+  
+  
+
+
+/*end part*/
+.autogroup10 {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    height: 70%;
+    position: absolute;    
+    left: 0;
+    top: 205%;
+    background-color: #000000;
+}
+.autogroup10 .autogroup11{
+    .vehicle{
+        width: 25%;
+        top: 58%;
+        position: absolute;
+        left: 15%;
+        font-size: 60px;
+        font-family: SriLankan;
+        color: rgb(255, 255, 255);
+    }
+    .auto{
+        width: 15%;
+        top: 40%;
+        position: absolute;
+        left: 4%;
+        font-size: 70px;
+        font-family: SriLankan;
+        line-height: normal;
+        color: #ffffff;
+    }
+    .way{
+        width: 25%;
+        top: 40%;
+        position: absolute;
+        left: 16%;
+        font-size: 70px;
+        font-family: SriLankan;
+        line-height: normal;
+        color: #ff0000;
+    }
+}
+    
+
+.autogroup10 .autogroup12{
+    width: 100%;
+    left: 35%;
+    p{
+        width: 25%;
+        position: absolute;
+        left: 40%;
+        top: 20%;
+        font-size: 30px;
+        font-family: SriLankan;
+        color: rgb(255, 255, 255);
+    }
+    .information{
+        font-size: 50px
+    }
+    .vehicle-fleet{
+        top: 45%;
+    }
+    .services{
+        top: 55%;
+    }
+    .about-us{
+        top: 65%;
+    }
+    .contac-us{
+        top: 75%;
+    }
+}
+
+.autogroup10 .autogroup13{
+    width: auto;
+    position: absolute;
+    left: 70%;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 255, 255);
+    top: 10%;
+    .have-a-question{
+        font-size: 45px;
+        top: 15%;
+        font-family: SriLankan;
+    }
+    .rent{
+        top: 50%;
+    }
+    .num{
+        top: 50%;
+    }
+}
+
+  
+
+
+/*local bar*/
+body .local-bar2{
+    width: 100%;
+    height: 30px;
+    margin: 0px;
+    position: absolute;
+    left: 0;
+    top: 276%;
+    background-color: #000000;
+    p{
+        width: 50%;
+        position: absolute;
+        left: 1.5%;
+        top: 12%;
+        color: white;
+    }
+    h5{
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        font-size: 15px;
+        color: white;
+    }
+}

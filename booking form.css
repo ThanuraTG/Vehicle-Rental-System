@@ -1,0 +1,227 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background: blur(5px);
+}
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(pic1234.jpg) no-repeat; 
+     /* background: url(blog-1.jpg) ;  */
+    /* backdrop-filter: blur(none); */
+    filter: blur(none);
+    background-size: 100%;
+    font-size: 40px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    h1{
+        font-family: Colonna MT;
+        /* font-style: italic; */
+        color: rgb(37, 36, 30);
+        border: 0px;
+        ;
+    }
+    p{
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+    }
+    color: rgb(7, 6, 6);
+    
+
+}
+.menu-bar{
+    background: #1977cf;
+    text-align: right;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    width: 50;
+    
+}
+.menu-bar ul{
+    list-style: none;
+    display: inline-flex;   
+}
+.menu-bar ul li{
+    padding: 10px 30px; 
+    position: relative;
+  
+}
+.menu-bar ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0;
+    
+}
+.menu-bar ul li a:hover{
+    color: black;
+}
+.drop-down{
+    display: none;
+}
+.menu-bar ul li:hover .drop-down{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #1ca7df;
+    
+}
+.menu-bar ul li:hover .drop-down ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .drop-down ul li{
+    width: 150px;
+    padding: 10px;
+}
+.fas{
+    float: center;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+/* nav{ 
+    width:100%;
+    background : rgb(72, 45, 134);
+    overflow :auto;
+
+}
+ul{
+    padding:0;
+    margin: 0 0 0 150px;
+    list-style: none;
+}
+nav ul{
+    float:right;
+    display: flex;
+    list-style: none;
+}*/
+.logo img{
+    position: absolute;
+    margin-top: 10px;
+    margin-left:500px;
+}
+nav ul li a{
+    width: 100px;
+    line-height: 20px;
+    display: block;
+    padding:20px 15px;
+    text-decoration: none;
+    font-family:Arial;
+    font-size: medium;
+    color:rgb(249, 249, 250);
+    text-align: center;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+a:hover{
+    color: red;
+    transition:0.5s;
+    text-transform:uppercase;
+   
+}
+.fleet{
+    display: none;
+
+
+}
+a:hover .fleet{
+    display: block;
+    color: #000000;
+}
+.personal{
+    display: grid;
+    width: auto;
+    height: auto;
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.5)50%,rgba(0, 0, 0, 0.5)50%);
+    color: rgb(8, 8, 8);
+    border: 2px;
+    font-size: 20px;
+    text-align: center;
+    grid-template-rows: max-content;
+    align-items: baseline;
+    grid-gap: 10px;
+    filter: none;
+    padding: 25px;
+    border-radius: 15px;
+    border: 3px solid white;
+
+}
+.personal input{
+    width: 600px;
+    height: 0px;
+    background: transparent;
+    border-radius: 20px;
+    padding: 25px;
+    font-size: 20px;
+    color: aliceblue;
+    border: 3px solid black;
+    .name{
+        color: brown;
+    }
+    .vtype{
+        color: brown;
+    }
+}
+.luxury:hover{
+    display: block;
+
+}
+.personal .country-city input{
+    width: 280px;
+    height: 0px;
+    background: transparent;
+    border-radius: 20px;
+    padding: 25px;
+}
+.personal .btn{
+    width: 100%;
+    height: 50px;
+    align-items: center;
+
+    text-align: center;
+    background: rgb(38, 155, 223);
+    border-radius: 100px;
+    font-size: 20px;
+    border: 1px solid black;
+    text-decoration: none;
+    list-style: none;
+    width: 200px;
+    
+}
+.personal h2{
+    font-size: 30px;
+    font-style: normal;
+    font-family: SriLankan;
+    color: rgb(64, 41, 41);
+}
+.personal .time{
+    label{
+        text-align: left;
+    }
+    input{
+        width: auto;
+    }
+}
+.personal .passa{
+    label{
+        text-align: left;
+    }
+    
+}
+.personal .passa input{
+    width: auto;
+    background: transparent;
+    border-radius: 20px;
+    padding: 25px;
+    font-size: 20px;
+    color: aliceblue;
+}
+body .all{
+    width: 800000px;
+    color: rgb(255, 34, 0);
+    top: 150px;
+}
